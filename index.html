@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автосалон</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212; /* Тёмный фон */
+            color: #e0e0e0; /* Светлый текст */
+        }
+        header {
+            background-image: url('https://www.example.com/header-background.jpg'); /* Добавьте свою картинку для фона */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            background-size: cover;
+            background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+        }
+        nav {
+            margin: 10px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1e1e1e; /* Тёмный фон для контента */
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            color: #ffffff; /* Белый текст для заголовков */
+        }
+        .car-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .car-item {
+            width: 48%;
+            margin: 10px 0;
+            padding: 15px;
+            background-color: #2e2e2e; /* Темный фон для карточек автомобилей */
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+        .car-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #333;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px 0;
+            background-color: #28a745; /* Зеленая кнопка */
+            color: white;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #218838; /* Темнее при наведении */
+        }
+        .form-section {
+            background-color: #2e2e2e; /* Тёмный фон для формы */
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+        }
+        .form-section input, .form-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #555; /* Более темные рамки */
+            border-radius: 5px;
+            background-color: #3a3a3a; /* Тёмный фон для полей ввода */
+            color: white; /* Светлый текст в полях ввода */
+        }
+        .form-section button {
+            background-color: #007bff; /* Синяя кнопка */
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .form-section button:hover {
+            background-color: #0056b3; /* Темнее при наведении */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать в наш автосалон!</h1>
+    <nav>
+        <a href="#about">О нас</a>
+        <a href="#cars">Наши автомобили</a>
+        <a href="#appointment">Запись на посещение</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+</header>
+
+<div class="content">
+    <section id="about">
+        <h2>О нас</h2>
+        <p>Мы предлагаем широкий выбор автомобилей на любой вкус и кошелек! 🚗💨</p>
+    </section>
+
+    <section id="cars">
+        <h2>Наши автомобили</h2>
+        <div class="car-list">
+            <div class="car-item">
+                <h3>Седан</h3>
+                <img src="https://assets.avtocod.ru/storage/images/articles/KHvW5Ba1mIIsvIAGkVuOLvap7aWhSTvvv4CCfR20.jpg" alt="Седан">
+                <p>Комфортный и экономичный.</p>
+            </div>
+            <div class="car-item">
+                <h3>Внедорожник</h3>
+                <img src="https://quto.ru/thumb/600x0/filters:quality(75)/imgs/2020/10/21/05/4236598/9515145b3b9fc101dede6713564534a6bdd82f2e.jpg" alt="Внедорожник">
+                <p>Для настоящих приключений.</p>
+            </div>
+            <div class="car-item">
+                <h3>Спорткар</h3>
+                <img src="https://s0.rbk.ru/v6_top_pics/media/img/0/70/754788644971700.jpeg" alt="Спорткар">
+                <p>Скорость и стиль.</p>
+            </div>
+            <div class="car-item">
+                <h3>Электромобиль</h3>
+                <img src="https://avtocharge.ru/assets/cache_image/doc/images/news/ili/2022-Zhiji-L7-05_large_1680x756_c6c.webp" alt="Электромобиль">
+                <p>Чистая энергия и инновации.</p>
+            </div>
+        </div>
+        <a href="#contact" class="button">Смотреть все автомобили</a>
+    </section>
+
+    <section id="appointment">
+        <h2>Запись на посещение</h2>
+        <p>Хотите продать свой автомобиль? Запишитесь на консультацию!</p>
+        <div class="form-section">
+            <form>
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Записаться</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Контакты</h2>
+        <p>Телефон: +7 (123) 456-78-90</p>
+        <p>Email: info@autosalon.ru</p>
+    </section>
+</div>
+
+<footer class="footer">
+    <p>&copy; 2025 Автосалон. Все права защищены.</p>
+</footer>
+
+</body>
+</html>
